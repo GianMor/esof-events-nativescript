@@ -2,10 +2,21 @@ const MapViewModel = require("./map-view-model");
 var mapsModule = require("nativescript-google-maps-sdk");
 
 
+const geoJson = require("./data")
+
+
+
 function onNavigatingTo(args) {
     const component = args.object;
     component.bindingContext = new MapViewModel();
 }
+
+// function isValidGEOJSON(obj) {
+//   try {
+//     if(obj.)
+//   }
+// }
+
 
 function onMapReady(args) {
     var mapView = args.object;
