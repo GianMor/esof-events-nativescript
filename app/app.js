@@ -1,8 +1,10 @@
 const application = require("tns-core-modules/application");
+const config = require("./config")
+const MapAPI = config.google.map.provideAPIKey || "AIzaSyDcNjogyKYCtce76MzNruKbU4TCaqHfj2U"
 
 //gogle map sdk key
 if(application.ios) {
-    GMSServices.provideAPIKey("AIzaSyDcNjogyKYCtce76MzNruKbU4TCaqHfj2U");
+    GMSServices.provideAPIKey(MapAPI);
   }
 
 
