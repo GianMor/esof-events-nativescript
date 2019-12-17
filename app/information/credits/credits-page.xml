@@ -1,4 +1,5 @@
 <Page
+    class="info"
     navigatingTo="onNavigatingTo"
     xmlns="http://schemas.nativescript.org/tns.xsd">
 
@@ -6,8 +7,14 @@
         <Label text="Credits"></Label>
     </ActionBar>
 
-    <GridLayout class="page__content">
-        <Label class="page__content-icon fas" text="&#xf05a;"></Label>
-        <Label class="page__content-placeholder" text="{{test}}"></Label>
-    </GridLayout>
+    <StackLayout orientation="vertical">
+        <Label text="Credits" class="title" fontSize="16" />
+        <ScrollView height="80%">
+          <Repeater items="{{ credits  }}" />
+        </ScrollView>
+
+        <Button class="-outline -rounded-sm" text="Back" tap="onTap" />
+
+
+    </StackLayout>
 </Page>

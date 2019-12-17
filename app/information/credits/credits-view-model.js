@@ -1,12 +1,12 @@
+
 const observableModule = require("tns-core-modules/data/observable");
 
-function CreditsViewModel() {
+function InformationViewModel() {
     const viewModel = observableModule.fromObject({
-        /* Add your view model properties here */
-        test: 'testo from model'
+        credits: ['Mario Rossi', 'Valentino Rossi', 'Vasco Rossi', 'Paolo Rossi']
     });
 
     return viewModel;
 }
 
-module.exports = CreditsViewModel;
+module.exports = InformationViewModel;
