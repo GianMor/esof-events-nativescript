@@ -1,13 +1,13 @@
 Page.info {
+  StackLayout {
+    Label,
     StackLayout {
-      Label,
-      StackLayout {
-        padding: 10;
-      }
-    }
-    .metadata {
-      Label {
-        margin: 0;
-      }
+      padding: 10;
     }
   }
+  .metadata {
+    Label {
+      margin: 0;
+    }
+  }
+}

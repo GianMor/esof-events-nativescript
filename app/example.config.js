@@ -1,7 +1,7 @@
-module.exports= {
+module.exports = {
     google: {
         map: {
-            provideAPIKey: "----- your API key -----"
+            provideAPIKey: "------- your api key -----"
         }
     }
 };
